@@ -18,4 +18,4 @@ python logistic_map.py 0.001 2.5 4 1000
 * **iterations**: number of time iterations to evolve the system
 
 ## Output
-The output plot will de saved as **/logistic_map/plot directory/logistic_plot.png**
+The output plot will de saved as **/logistic_map/plot/logistic_plot.png**

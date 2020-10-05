@@ -9,18 +9,17 @@ Created on Sun Oct  4 22:36:54 2020
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+plt.style.use('ggplot')
 
 '''
 inputs:
 x0 - initial condition
-r_interval - interval of values for r
-n - number of iterations
+r_min - min value for parameter r
+r_max - max value for parameter r
+iterations - number of iterations
 '''
 
 print 'System arguments:\n'
-#print 'System arguments:', len(sys.argv), 'arguments.'
-#print 'Argument List:', str(sys.argv)
-#print sys.argv
 print 'Initial condition x0:', sys.argv[1]
 print 'r interval: from', sys.argv[2], 'to', sys.argv[3]
 print 'Number of iterations: ', sys.argv[4], '\n'
@@ -31,14 +30,10 @@ def logistic(r,x):
     return r * x * (1 - x)
 
 
-# Parameter initialization
-
-
 n = 10000
 #iterations = 1000
 #r = np.linspace(2.5, 4, n)
 #x = 1e-5 * np.ones(n)
-
 
 def logistic_system():
     
@@ -47,7 +42,7 @@ def logistic_system():
     r = np.linspace(float(sys.argv[2]), float(sys.argv[3]), iterations)
     x = np.full(iterations, x0)
 
-    fig, ax = plt.subplots(1, 1, figsize=(8, 9),
+    fig, ax = plt.subplots(1, 1, figsize=(12, 9),
                                sharex=True)
 
     for i in range(iterations):

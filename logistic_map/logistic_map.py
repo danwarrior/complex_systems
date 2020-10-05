@@ -31,16 +31,13 @@ def logistic(r,x):
 
 
 n = 10000
-#iterations = 1000
-#r = np.linspace(2.5, 4, n)
-#x = 1e-5 * np.ones(n)
 
 def logistic_system():
     
     x0 = float(sys.argv[1])
     iterations = int(sys.argv[4])
-    r = np.linspace(float(sys.argv[2]), float(sys.argv[3]), iterations)
-    x = np.full(iterations, x0)
+    r = np.linspace(float(sys.argv[2]), float(sys.argv[3]), n)
+    x = np.full(n, x0)
 
     fig, ax = plt.subplots(1, 1, figsize=(12, 9),
                                sharex=True)

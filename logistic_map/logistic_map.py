@@ -19,10 +19,10 @@ r_max - max value for parameter r
 iterations - number of iterations
 '''
 
-print 'System arguments:\n'
-print 'Initial condition x0:', sys.argv[1]
-print 'r interval: from', sys.argv[2], 'to', sys.argv[3]
-print 'Number of iterations: ', sys.argv[4], '\n'
+print ('System arguments:\n')
+print ('Initial condition x0:', sys.argv[1])
+print ('r interval: from', sys.argv[2], 'to', sys.argv[3])
+print ('Number of iterations: ', sys.argv[4], '\n')
 
 
 

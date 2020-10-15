@@ -1,5 +1,5 @@
 # Lorenz system
 
 
-![Lorenz Attractor](/logistic_map/images/lorenz_attractor.png)
+![Lorenz Attractor](/lorenz_system/images/lorenz_attractor.png)
 

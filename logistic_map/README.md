@@ -1,7 +1,7 @@
 # logistic_map
 Plot to show bifurcations in the logistic map
 
-![Logistic Plot](/images/logistic_plot.png)
+![Logistic Plot](/logistic_map/images/logistic_plot.png)
 
 ## Example
 ```

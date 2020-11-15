@@ -1,4 +1,4 @@
-# Barabasi-Albert model
+# Complex Networks models
 Barabasi-Albert network dynamics
 
 ![BA-Plot](/networks/images/ba.png) 
